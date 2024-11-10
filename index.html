@@ -25,18 +25,14 @@
     padding: 0 20px;
   }
 
-   header {
+  header {
     background-color:rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-    padding: 1rem 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-  }
-
-  header.scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
   .header-content {
@@ -52,13 +48,12 @@
   }
 
   nav ul {
-    list-style-type: none;
     display: flex;
+    list-style: none;
   }
 
   nav ul li {
     margin-left: 20px;
- 
   }
 
   nav ul li a {
@@ -71,17 +66,10 @@
     color: #ddd;
   }
 
-  .menu-toggle {
+  .menu-icon {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-  }
-
-
-  .menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
   }
 
   .hero {
@@ -357,12 +345,16 @@
     color: #0066cc;
   }
 
-  @media screen and (max-width: 768px) {
-    .menu-toggle {
+  @media (max-width: 768px) {
+    .header-content {
+      position: relative;
+    }
+
+    .menu-icon {
       display: block;
     }
 
-    nav ul {
+    nav {
       display: none;
       flex-direction: column;
       position: absolute;
@@ -374,15 +366,18 @@
       padding: 20px;
     }
 
-    nav ul.show {
-      display: flex;
+    nav.active {
+      display: block;
+    }
+
+    nav ul {
+      flex-direction: column;
     }
 
     nav ul li {
       margin: 10px 0;
       color: #0066cc;
     }
-
 
     .hero {
       height: auto;
