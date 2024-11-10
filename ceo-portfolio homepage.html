@@ -26,8 +26,8 @@
   }
 
   header {
-    background-color: #0066cc;
-    color: #fff;
+    background-color:rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
     padding: 20px 0;
     position: fixed;
     width: 100%;
@@ -42,8 +42,9 @@
   }
 
   .logo {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0066cc;
   }
 
   nav ul {
@@ -56,19 +57,19 @@
   }
 
   nav ul li a {
-    color: #fff;
+    color:#0066cc;
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   nav ul li a:hover {
-    color: #f0f0f0;
+    color: #ddd;
   }
 
   .menu-icon {
     display: none;
-    font-size: 24px;
     cursor: pointer;
+    font-size: 1.5rem;
   }
 
   .hero {
@@ -355,11 +356,13 @@
 
     nav {
       display: none;
+      flex-direction: column;
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #0066cc;
+      background-color:rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
       padding: 20px;
     }
 
@@ -373,6 +376,7 @@
 
     nav ul li {
       margin: 10px 0;
+      color: #0066cc;
     }
 
     .hero {
@@ -449,13 +453,13 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <div class="logo">OKV CEOS'S PORTFOLIO</div>
+        <div class="logo">OKV CEO'S PORTFOLIO</div>
         <div class="menu-icon">&#9776;</div>
         <nav>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.htmlrvices.">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
